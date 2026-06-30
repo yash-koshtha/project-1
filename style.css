@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("studiophoto.jpeg");
+    background-size: cover;
+}
+
+#main {
+    position: absolute;
+    height: 100%;
+}
+
+#check {
+    display: none;
+}
+
+#icon_one i {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: 300px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.slide_bar {
+    height: 800px;
+    width: 350px;
+    position: absolute;
+    left: -400px;
+    background-color: rgba(255, 255, 255.0.1);
+    box-shadow: 0 0 12px white;
+    transition:all 2s cubic-bezier(0.29, 1.01, 1, -0.68) 0s;
+}
+
+.slide_nav {
+    height: 60px;
+    width: 350px;
+}
+
+.slide_nav:hover {
+    box-shadow: 0 0 10px white;
+}
+
+#logo {
+    position: absolute;
+    height: 60px;
+    padding-top: 13px;
+    padding-left: 70px;
+}
+
+#logo a {
+    font-size: 25px;
+    color: teal;
+    text-decoration: none;
+}
+
+#icon_two {
+    position: absolute;
+    height: 60px;
+    padding-top: 18px;
+}
+
+#icon_two i {
+    position: absolute;
+    color: gray;
+    font-size: 15px;
+    font-weight: 500px;
+    line-height: 2;
+    padding-left: 300px;
+    cursor: pointer;
+}
+
+.slide_contant ul li i {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.slide_contant ul li {
+    height: 60px;
+    width: 350px;
+}
+
+.slide_contant ul li:hover {
+    box-shadow: 0 0 10px white;
+}
+
+.slide_contant ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.slide_footer {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+.slide_footer a i {
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.slide_footer a i:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+#check:checked~.slide_bar {
+    left: 0px;
+}
+
+#check:checked~#icon_one i {
+    opacity: 0;
+}
